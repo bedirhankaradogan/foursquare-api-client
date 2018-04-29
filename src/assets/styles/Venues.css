@@ -1,0 +1,162 @@
+.venues {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.venue-element {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  padding: 0 20px 20px 0;
+}
+
+.venue-element:nth-child(2n + 0) {
+  padding: 0 0 20px 0;
+}
+
+.venue-element-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.venue-element-content::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #12195f;
+  opacity: 0.5;
+}
+
+.venue-element-detail {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.venue-element-name {
+  position: relative;
+  width: 100%;
+  padding: 0 18px 10px 18px;
+  font-family: 'GothamLight';
+  font-size: 25px;
+  text-align: left;
+  color: #ffffff;
+  word-break: break-word;
+}
+
+.venue-element-name::after {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 2px;
+  bottom: 0;
+  left: 18px;
+  background-color: #c4c0ff;
+}
+
+.venue-element-summary {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  padding: 0 0 0 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.venue-element-summary-col {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.venue-element-summary-col:nth-child(1) {
+  flex: 1;
+}
+
+.venue-element-summary-col:nth-child(2) {
+  flex: 2;
+}
+
+.venue-element-summary-col:nth-child(3) {
+  flex: initial;
+  width: 90px;
+  padding-right: 0;
+}
+
+.venue-element-summary-icon {
+  position: relative;
+  width: 10px;
+}
+
+.venue-element-summary-icon img {
+  width: 10px;
+}
+
+.venue-element-summary-text {
+  position: relative;
+  padding-left: 7px;
+  flex: 1;
+  font-family: 'GothamBook';
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #ffffff;
+}
+
+.venue-element-summary-triangle {
+  width: 0;
+	height: 0;
+	border-left: 45px solid transparent;
+	border-right: 45px solid transparent;
+	border-bottom: 45px solid #776cee;
+}
+
+.venue-element-summary-point {
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  font-family: 'GothamBook';
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 700px) {
+
+  .venues {
+    flex-direction: column;
+  }
+
+  .venue-element {
+    width: 100%;
+    height: 400px;
+    padding: 0 0 20px 0;
+  }
+
+}

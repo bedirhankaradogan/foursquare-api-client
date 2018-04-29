@@ -1,0 +1,237 @@
+.venue {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.venue-header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #12195f;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.venue-header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #12195f;
+  opacity: 0.6;
+}
+
+.venue-header-top {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.venue-header-logo-wrapper {
+  position: relative;
+  height: 370px;
+  margin: 0 auto;
+}
+
+.venue-header-logo {
+  height: 228px;
+}
+
+.venue-header-icon {
+  position: absolute;
+  left: -40px;
+  bottom: 0;
+  width: 252px;
+  height: 252px;
+}
+
+.venue-header-name {
+  position: relative;
+  width: 100%;
+  padding: 27px 0;
+  font-family: 'GothamXLight';
+  font-size: 64px;
+  text-align: left;
+  color: #ffffff;
+  word-break: break-word;
+}
+
+.venue-header-bottom {
+  position: relative;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.venue-header-bottom::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(95deg, #1e0db4, #e44747);
+  opacity: 0.6;
+}
+
+.venue-header-summary {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.venue-header-summary-point-wrapper {
+  position: absolute;
+  right: 14px;
+  top: -48px;
+  width: 66px;
+  height: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.venue-header-summary-point-square {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #776cee;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.venue-header-summary-point-text {
+  position: absolute;
+  font-family: 'GothamLight';
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.venue-header-summary-row {
+  position: relative;
+  width: 80%;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.venue-header-summary-col {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.venue-header-summary-row .venue-header-summary-col:last-child {
+  padding-right: 0;
+}
+
+.venue-header-summary-icon {
+  position: relative;
+  width: 10px;
+}
+
+.venue-header-summary-icon img {
+  width: 10px;
+}
+
+.venue-header-summary-text {
+  position: relative;
+  padding-left: 7px;
+  flex: 1;
+  font-family: 'GothamBook';
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #ffffff;
+  word-break: break-word;
+}
+
+.venue-body {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.venue-photos {
+  position: relative;
+  flex: 2;
+  margin-right: 40px;
+}
+
+.venue-tips {
+  position: relative;
+  flex: 1;
+  margin-top: -70px;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .venue-header-top, .venue-header-summary, .venue-body {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+  .venue {
+    padding-bottom: 0;
+  }
+
+  .venue-header-top, .venue-header-summary, .venue-body {
+    width: calc(100% - 40px);
+  }
+
+  .venue-photos {
+    margin-right: 20px;
+  }
+
+}
+
+@media screen and (max-width: 860px) {
+
+  .venue {
+    margin-bottom: 20px;
+  }  
+
+  .venue-body {
+    flex-direction: column;
+  }
+
+  .venue-photos {
+    flex: initial;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .venue-tips {
+    flex: initial;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+}

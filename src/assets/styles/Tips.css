@@ -1,0 +1,116 @@
+.tips {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.tips-header {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  margin-bottom: 16px;
+  font-family: 'GothamMedium';
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #4a4a4a;
+  word-break: break-word;
+}
+
+.tips-header::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #c4c0ff;
+}
+
+.tips-body {
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.tip-element {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: solid 1px #e4e4e4;
+}
+
+.tip-element-user-info {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7px;
+  padding-left: 7px;
+}
+
+.tip-element-user-image {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #776cee;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+
+.tip-element-user-image div {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: -10px 0 0 -10px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tip-element-user-name {
+  position: relative;
+  padding-left: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'GothamMedium';
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: #9b9b9b;
+  word-break: break-word;
+}
+
+.tip-element-text {
+  position: relative;
+  padding-left: 67px;
+  flex: 1;
+  font-family: 'GothamLight';
+  font-size: 14px;
+  text-align: left;
+  color: #9b9b9b;
+  word-break: break-word;
+}
+
+.tips-footer {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  font-family: 'GothamMedium';
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+  color: #7a74d2;
+  word-break: break-word;
+  text-decoration: underline;
+}

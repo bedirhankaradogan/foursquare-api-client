@@ -1,0 +1,111 @@
+.photos {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.photo-element {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  padding: 0 20px 20px 0;
+}
+
+.photo-element:nth-child(2n + 0) {
+  padding: 0 0 20px 0;
+}
+
+.photo-element-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #12195f;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.photo-element-content::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #12195f;
+  opacity: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0,0,0.2,1);
+  transition: all 0.3s cubic-bezier(0,0,0.2,1);
+}
+
+.photo-element-user-image {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  margin-top: 400px;
+  background-color: #776cee;
+  overflow: hidden;
+}
+
+.photo-element-user-image div {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: -10px 0 0 -10px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-element-user-name {
+  position: relative;
+  width: 100%;
+  margin-top: 400px;
+  font-family: 'GothamMedium';
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  word-break: break-word;
+}
+
+.photo-element-content:hover::before {
+  opacity: 0.5;
+}
+
+.photo-element-content:hover > .photo-element-user-image {
+  margin-top: initial;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.photo-element-content:hover > .photo-element-user-name {
+  margin-top: initial;
+}
+
+@media screen and (max-width: 700px) {
+
+  .photos {
+    flex-direction: column;
+  }
+
+  .photo-element {
+    width: 100%;
+    height: 400px;
+    padding: 0 0 20px 0;
+  }
+
+}
