@@ -1,4 +1,4 @@
-# Foursquare API Client
+# Foursquare API Example
 
 A React.js project which uses foursquare API.
 
