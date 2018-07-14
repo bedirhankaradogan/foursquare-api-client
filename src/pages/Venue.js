@@ -44,8 +44,8 @@ export default class Venue extends Component {
 
     Axios.get('https://api.foursquare.com/v2/venues/' + this.state.venue_id, {
       params: {
-        client_id: 'V131V0IPODZOAI4DH0TXB0W1VF4R1QCAHASGHJI35D3KJLWK',
-        client_secret: 'YAOLTIPXQYLDX4E0MVNZSB1TJTIZKXCPTFBGMAPBXXC2LL1E',
+        client_id: 'GH4BWS2A1V0K0RAIGWA401NNQ04JUIF55HUTP30LQ1IKINUL',
+        client_secret: 'NRTY31TIGPDGK5GWODTMDKTQL1JTW1VKLWHWZJR425E03WSN',
         v: 20120610
       }
     }).then((response) => {
