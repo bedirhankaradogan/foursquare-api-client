@@ -21,7 +21,3 @@ A React.js project which uses foursquare API.
 ### Lıcence
 
 MIT ©
-
-### Support
-
-[Support me on Patreon](https://www.patreon.com/bedirhankaradogan)
